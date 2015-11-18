@@ -7,7 +7,7 @@ RUN apt-key update -y
 RUN apt-get update && apt-get install -y libfftw3-bin libfftw3-dev python-pip gcc
 RUN conda install -y ncurses
 RUN conda install -y -c pkgw casa-data casa-python 
-RUN pip install rtpipe realfast sdmreader sdmpy pwkit
+RUN pip install rtpipe sdmreader sdmpy pwkit pyfftw
 
 WORKDIR /ipynb
 CMD ipython notebook --no-browser --ip=0.0.0.0
