@@ -1,6 +1,9 @@
 # Builds rtpipe, pwkit and all dependencies with conda for use in ipython notebook
-#FROM continuumio/anaconda:latest  # option 1
-FROM andrewosh/binder-base  # option 2 (for use with mybinder.org)
+# option 1
+#FROM continuumio/anaconda:latest
+
+# option 2
+FROM andrewosh/binder-base
 
 USER root  # opt 2
 
