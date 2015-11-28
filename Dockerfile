@@ -6,7 +6,7 @@ USER root
 
 RUN apt-get update
 
-apt-get install -y libfftw3-bin libfftw3-dev
+RUN apt-get install -y libfftw3-bin libfftw3-dev
 
 USER main
 
