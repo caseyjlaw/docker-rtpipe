@@ -9,7 +9,8 @@ RUN conda install -y ncurses
 RUN conda install -y -c pkgw casa-data casa-python 
 RUN pip install rtpipe sdmreader sdmpy pwkit pyfftw
 
-WORKDIR /ipynb
-CMD ipython notebook --no-browser --ip=0.0.0.0
+COPY jupytercustomcss /.jupyter/custom
+
+CMD jupyter notebook --notebook-dir=/home --no-browser --ip=0.0.0.0
 EXPOSE 8888
 
